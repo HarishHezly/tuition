@@ -20,6 +20,9 @@ class Jet_fighter : public Aircraft
         float getMach_num(){return Mach_num;}
         int getNo_of_missiles(){return No_of_missiles;}
         int getNo_of_pilots(){return No_of_pilots;}
+
+        void printInfo();
+        void ReadFromFile(string);
         
 };
 

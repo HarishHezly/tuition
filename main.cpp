@@ -16,6 +16,9 @@ int main()
 
     myHelicopter.ReadFromFile("dataHelicopter.txt");
     myHelicopter.printInfo();
+    cout<< endl;
+    myJet_fighter.ReadFromFile("dataJet_Fighter.txt");
+    myJet_fighter.printInfo();
 
     return 0;
 
