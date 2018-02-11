@@ -24,6 +24,10 @@ class Aircraft
         string getName(){return Name;}
         float getRange(){return Range;}        
 
+        //Virtual methods.
+        virtual void printInfo(){return;}
+        virtual void ReadFromFile(string filename){return;}
+
     protected:
         float MaximumAlt;
         float TopSpeed;

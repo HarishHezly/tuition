@@ -13,6 +13,10 @@ int main()
     Jet_fighter myJet_fighter;
     Seaplane mySeaplane;
     Helicopter myHelicopter;
+
+    myHelicopter.ReadFromFile("dataHelicopter.txt");
+    myHelicopter.printInfo();
+
     return 0;
 
 }

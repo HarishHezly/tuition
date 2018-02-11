@@ -23,6 +23,9 @@ class Helicopter : public Aircraft
         int getNo_of_tail_rotor_blades(){return No_of_tail_rotor_blades;}
         float getTorque(){return Torque;}
 
+        void printInfo();
+        void ReadFromFile(string);
+
 };
 
 #endif // !HELICOPTER
