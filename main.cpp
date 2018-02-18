@@ -6,20 +6,29 @@
 
 using namespace std;
 
+//Polymorphism, using the Aircraft class pointer to call virtual member for the derived class.
+void displayData(Aircraft *p)
+{
+    p->printInfo();
+}
+
+
+
 int main()
 {
     cout<<"Welcome to Malaysian Airport Hanger Hotel"<<endl;
-    Aircraft myAircraft;
+
     Jet_fighter myJet_fighter;
-    Seaplane mySeaplane;
-    Helicopter myHelicopter;
+    Seaplane    mySeaplane;
+    Helicopter  myHelicopter;
 
     myHelicopter.ReadFromFile("dataHelicopter.txt");
-    myHelicopter.printInfo();
-    cout<< endl;
     myJet_fighter.ReadFromFile("dataJet_Fighter.txt");
-    myJet_fighter.printInfo();
 
+    displayData(&myHelicopter);
+    displayData(&myJet_fighter);
+ 
+    
     return 0;
 
 }

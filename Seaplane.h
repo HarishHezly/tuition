@@ -23,6 +23,9 @@ class Seaplane : public Aircraft
         int getNo_of_engines(){return No_of_engines;}
         int getNo_of_passengers(){return No_of_passengers;}
         int getMax_weight_luggage(){return Max_weight_luggage;}
+
+        void printInfo();
+
 };
 
 #endif // !SEAPLANE

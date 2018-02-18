@@ -25,7 +25,9 @@ class Aircraft
         float getRange(){return Range;}        
 
         //Virtual methods.
-        virtual void printInfo(){return;}
+        // Abstrat function, force this class to be an abstract class, can create object out of it
+        virtual void printInfo()=0;
+        // Virtual method, allow the derived class to override the definition of the method
         virtual void ReadFromFile(string filename){return;}
 
     protected:
